@@ -36,7 +36,7 @@ build() {
 	mkdir yambar/_build
 	cd yambar/_build
 
-	meson --buildtype=release --prefix=/usr \
+	meson setup --buildtype=release --prefix=/usr \
 		--wrap-mode=nofallback \
 		-Db_lto=true \
 		-Dbackend-x11=enabled -Dbackend-wayland=enabled \
